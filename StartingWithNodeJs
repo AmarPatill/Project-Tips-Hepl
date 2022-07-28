@@ -1,0 +1,20 @@
+//this should be a .js file
+//install node first
+
+var http = require('http')
+var url = require('url')
+http.createServer(function(req , res)
+{
+    var route = req.url
+    if(route=='/'){
+        res.end('this is info from backend to homepage')
+    }
+    if(route=='/getusername'){
+        var username=['amar','geeta','yusuf']
+        res.end(JSON.stringify(username))
+    }
+
+}).listen(5000)
+
+//to run if u r using vscode type node filename.jsin terminal
+//as i have used port no 5000 int he code type "http://localhost:5000/getusername" on browser while running "node filename.js" on terminal
