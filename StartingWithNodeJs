@@ -1,5 +1,5 @@
 //this should be a .js file
-//install node first
+//install node first.
 
 var http = require('http')
 var url = require('url')
